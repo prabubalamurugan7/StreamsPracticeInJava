@@ -26,6 +26,12 @@ public class Filter {
         Stream<String> streamOfString2 = listOfString.stream().sorted();
         streamOfString2.filter(p -> p.toUpperCase().startsWith("O")).forEach(System.out::println);
 
+        System.out.println("=================================================================");
+
+        //Filter - EndsWith n in Uppercase
+        Stream<String> streamOfString3 = listOfString.stream().sorted();
+        streamOfString3.filter(p -> p.toUpperCase().endsWith("N")).forEach(System.out::println);
+
 
     }
 }
